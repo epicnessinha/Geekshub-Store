@@ -1,8 +1,13 @@
-.productGridStyle{
-    display: table-row;
+.productsDesign{
+    
+}
+
+.productsDesign:hover{
+    cursor:pointer;
 }
 
 .imgStyle {
     height: 5rem;
     width: 5rem;
 }
+

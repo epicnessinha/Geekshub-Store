@@ -14,7 +14,7 @@ const Catalogue = () => {
 
     const[loading, setLoading] = useState(false);
     const[currentPage, setCurrentPage] = useState(1);
-    const[productsPerPage, setProductsPerPage] = useState(10);
+    const[productsPerPage, setProductsPerPage] = useState(20);
 
     useEffect(() => {
 
@@ -41,7 +41,7 @@ const Catalogue = () => {
         <div className='catalogueDesign'>
             <h1>All of our products</h1>
             <Product products={currentProducts} loading={loading}/>
-            <Pagination postsPerPage={productsPerPage} totalProducts={products.length} paginate={paginate}/>
+            <Pagination productsPerPage={productsPerPage} totalProducts={products.length} paginate={paginate}/>
             
             
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Product.css'
 
 
 export const Product = ({products, loading}) => {
@@ -10,7 +11,7 @@ export const Product = ({products, loading}) => {
   return (
     <ul className="list-group mb-4">
         {products.map(product => (
-            <li key={product.id} className="list-group-item">
+            <li key={product.id} className="productsDesign">
                 {product.title}
             </li>
         ))}
