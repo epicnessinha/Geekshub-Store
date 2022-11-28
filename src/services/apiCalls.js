@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-var root = '';
+var root = 'https://api.escuelajs.co/api/v1/';
 
 export const name = async () => {
 
