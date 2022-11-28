@@ -2,8 +2,9 @@
     transition:0.5s;
     cursor: pointer;
     margin-bottom: 1.5rem;
-    margin-right: 2rem;
-  
+    margin-right: 4rem;
+    color: aliceblue;
+    font-weight: 700;
     font-size: x-large;
 }
 

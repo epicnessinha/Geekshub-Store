@@ -8,6 +8,7 @@ import Pagination from '../../components/Pagination/Pagination';
 
 
 
+
 const Catalogue = () => {
 
     const[products, setProducts] = useState([]);
@@ -19,7 +20,7 @@ const Catalogue = () => {
     useEffect(() => {
 
        if(products.length === 0){
-            bringProducts().then(
+            bringProducts().then (
                 res => {
                     setProducts(res.data);
                     console.log(res.data);

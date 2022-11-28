@@ -1,27 +1,26 @@
-import React from 'react';
-import { useProductContext } from '../../providers/ProductProvider';
-import './ProductDetails.css';
-
+import React from "react";
+import { useProductContext } from "../../providers/ProductProvider";
+import "./ProductDetails.css";
 
 const ProductDetails = () => {
-    const product = useProductContext();
+  const product = useProductContext();
 
-    return (
-        <div className='productDetailDesign'>
-            <br></br>
-            <h1>Product Details</h1>
-            {product.id !== undefined &&
-            <div>{product.title}</div>
-}
-        </div>
-    )
-}
+  return (
+    <div className="productDetailDesign">
+      <br></br>
+      <h1>Product Detail</h1>
+      {product.id !== undefined && (
+        <div className="productTitle">{product.title}</div>
+      )}
+    </div>
+  );
+};
 
 export default ProductDetails;
 
 
-
-
+/* <div><img className='productImage' src={product.image}} alt={product.image} with='375' height='560'/></div>
+} */
 
 
 /* const ProductDetails = ({product}) => {
@@ -73,6 +72,3 @@ if (product.length > 0) {
         </div>
     );
 };*/
-
-
-

@@ -11,3 +11,10 @@
     
    
 }
+
+.productTitle{
+    display: flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    margin-left: 1em;
+}
