@@ -15,6 +15,12 @@ export const bringProducts = async (extension) => {
 }
 
 export const bringDetails = async (id) => {
-    return await axios.get(`https://api.escuelajs.co/api/v1/products/${id}`);     
+    return await axios.get(`https://api.escuelajs.co/api/v1/products/${id}`); 
+
+    /*return await axios.get(`https://api.escuelajs.co/api/v1/products/1/${id}`);*/    
 }
 
+
+export const bringImages = async ([images]) => {
+    return await axios.get(`https://api.escuelajs.co/api/v1/files/${images}`);
+}
