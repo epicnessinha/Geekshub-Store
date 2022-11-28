@@ -1,12 +1,12 @@
 import axios from 'axios';
 
-var root = 'https://api.escuelajs.co/api/v1/';
+var root = 'https://api.escuelajs.co/api/v1';
 
-export const name = async () => {
+export const bringProducts = async (extension) => {
 
     let config = {
         method: 'get',
-        url:`${root}/ *name* `
+        url:`${root}/${extension}`
     }
 
     return await axios(config);
