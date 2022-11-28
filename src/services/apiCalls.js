@@ -13,6 +13,6 @@ export const bringProducts = async (extension) => {
 }
 
 export const bringDetails = async (id) => {
-    return await axios.get(`https://api.escuelajs.co/api/v1/products/1/${id}`);     
+    return await axios.get(`https://api.escuelajs.co/api/v1/products/${id}`);     
 }
 
