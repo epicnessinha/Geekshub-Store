@@ -17,7 +17,7 @@ import { bringDetails } from '../../services/apiCalls';
     )
 } */
 
-useEffect(()=>{
+/*useEffect(()=>{
     const fecthData = async () => {
         let response = await bringDetails(searchInput);
         let results = response.data.results
@@ -51,6 +51,10 @@ if (product.length > 0) {
         </div>
         </div>
     );
-};
+};*/
+
+const ProductDetails = () => {
+    
+}
 
 export default ProductDetails;

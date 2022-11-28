@@ -3,6 +3,8 @@ import './Catalogue.css';
 import Product from '../../components/Product/Product';
 import { bringProducts } from '../../services/apiCalls';
 import Pagination from '../../components/Pagination/Pagination';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 
@@ -12,7 +14,7 @@ const Catalogue = () => {
 
     const[loading, setLoading] = useState(false);
     const[currentPage, setCurrentPage] = useState(1);
-    const[productsPerPage, setProductsPerPage] = useState(20);
+    const[productsPerPage, setProductsPerPage] = useState(10);
 
     useEffect(() => {
 

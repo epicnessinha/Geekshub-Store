@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export const Pagination = ({productsPerPage, totalProducts}) => {
     const pageNumbers = [];
