@@ -1,10 +1,6 @@
-import React, { useProductContext } from 'react';
-import Product from '../../components/Product/Product';
-import ProductCard from '../../components/ProductCard/ProductCard';
+import React from 'react';
+import { useProductContext } from '../../providers/ProductProvider';
 import './ProductDetails.css';
-
-
-
 
 
 const ProductDetails = () => {
