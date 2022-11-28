@@ -8,6 +8,7 @@ const ProductDetails = () => {
 
     return (
         <div className='productDetailDesign'>
+            <br></br>
             <h1>Product Details</h1>
             {product.id !== undefined &&
             <div>{product.title}</div>

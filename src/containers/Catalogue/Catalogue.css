@@ -1,4 +1,15 @@
 .catalogueDesign{
-    height: 50rem;
+
+
+    height: 87vh; 
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow-y: scroll;  
+    cursor:pointer;
+    background-color: rgb(149, 180, 238);
+    
     
 }

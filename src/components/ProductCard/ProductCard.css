@@ -1,5 +1,26 @@
 .productInfoDesign {
-    height: 12em;
-    width: 8em;
-    background-color: red; /*just for test*/
+    height: 30rem;
+    width: 30em;
+    margin-top: 2em;
+    background-color:darkcyan; /*just for test*/
+   
+    flex-direction: column;
+ 
+    font-family: sans-serif;
+    justify-content: center;
+
+}
+
+.priceAndDescription{
+
+
+    font-size: x-large;
+    
+
+}
+
+
+.description {
+
+    font-size: larger;
 }
