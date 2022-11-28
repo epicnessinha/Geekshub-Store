@@ -1,6 +1,29 @@
-import React, { useEffect } from 'react';
+import React, { useProductContext } from 'react';
+import Product from '../../components/Product/Product';
+import ProductCard from '../../components/ProductCard/ProductCard';
 import './ProductDetails.css';
-import { bringDetails } from '../../services/apiCalls';
+
+
+
+
+
+const ProductDetails = () => {
+    const product = useProductContext();
+
+    return (
+        <div className='productDetailDesign'>
+            <h1>Product Details</h1>
+            <ProductCard details = {product.title}/>
+            
+        </div>
+    )
+}
+
+export default ProductDetails;
+
+
+
+
 
 
 /* const ProductDetails = ({product}) => {
@@ -53,8 +76,5 @@ if (product.length > 0) {
     );
 };*/
 
-const ProductDetails = () => {
-    
-}
 
-export default ProductDetails;
+

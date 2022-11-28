@@ -7,9 +7,11 @@ const Header = () => {
 
     return (
         <div className="headerDesign">
-            <div className="linkDesign" onClick={()=>setTimeout(()=>{navigate("/catalogue")},250)}>Catalogue</div>
-            <div className="linkDesign" onClick={()=>setTimeout(()=>{navigate("/add")},250)}>Add product</div>
             <div className="linkDesign" onClick={()=>setTimeout(()=>{navigate("/")},250)}>Home</div>
+            <div className="linkDesign" onClick={()=>setTimeout(()=>{navigate("/catalogue")},250)}>Catalogue</div>
+            <div className="linkDesign" onClick={()=>setTimeout(()=>{navigate("/details")},250)}>Product Detail</div>
+            <div className="linkDesign" onClick={()=>setTimeout(()=>{navigate("/add")},250)}>Add product</div>
+            
             
         </div>
     )
