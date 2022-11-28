@@ -1,20 +1,35 @@
 import React from 'react';
 import {useNavigate} from 'react-router-dom';
+import { useProductChangeContext } from '../../providers/ProductProvider';
 import './ProductCard.css';
 
 /*const ProductCard = () => {
 
 }*/
 
-const ProductCard = ({product}) => {
+const ProductCard = ({value}) => {
+
+    const navigate = useNavigate();
+
+    const productChange = useProductChangeContext();
+
+    const goDetail = () => {
+
+        productChange(value);
+
+        setTimeout(() => {
+            navigate('/details')
+        },200);
+    }
+
     return (
-        <div className='productInfoDesign'>
-            <h3>{product.title}</h3>
-            <div className='productImg'><img src={``} alt={product.title} with='375' height='560'/></div>
+        <div className='productInfoDesign' onClick={() => goDetail()}>
+            <h3>{value.title}</h3>
+            <div className='productImg'><img src={``} alt={value.title} with='375' height='560'/></div>
             <div className='PriceAndDescription'>
-                <div>Price: {product.price}</div>
+                <div>Price: {value.price}</div>
             </div>
-            <div className='Description'>{product.description}</div>
+            <div className='Description'>{value.description}</div>
         </div>
     )
 

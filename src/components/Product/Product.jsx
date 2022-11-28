@@ -1,9 +1,13 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {useNavigate} from 'react-router-dom';
 import './Product.css'
+import ProductCard from '../ProductCard/ProductCard';
 
 
-export const Product = ({products, loading}) => {
+const Product = ({products, loading}) => {
+
+    
 
     if(loading){
         return <h2>Loading products...</h2>
@@ -11,9 +15,9 @@ export const Product = ({products, loading}) => {
   return (
     <ul className="list-group mb-4">
         {products.map(product => (
-            <li key={product.id} className="productsDesign">
-                {product.title}
-            </li>
+            <div key={product.id}>
+            <ProductCard value={product}/>
+            </div>
         ))}
     </ul>
   )
