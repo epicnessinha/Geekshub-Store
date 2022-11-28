@@ -5,7 +5,9 @@ function App() {
   return (
     <div className="App">
       <Body/>
-     
+     <>
+     <p>Fake Ecommerce</p>
+     </>
     
     </div>
   );
