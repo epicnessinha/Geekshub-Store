@@ -1,4 +1,5 @@
 .catalogueDesign{
-    background-color: darkcyan;
     height: 50rem;
+    display: flex;
+    align-items: center;
 }

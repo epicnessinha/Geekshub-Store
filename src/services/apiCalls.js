@@ -1,13 +1,15 @@
 import axios from 'axios';
 
-var root = 'https://api.escuelajs.co/api/v1';
+var root = 'https://api.escuelajs.co/api/v1/products';
 
 export const bringProducts = async (extension) => {
 
     let config = {
         method: 'get',
-        url:`${root}/${extension}`
+        url:`${root}/`
+    
     }
+
 
     return await axios(config);
 }

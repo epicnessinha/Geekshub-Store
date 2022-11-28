@@ -14,21 +14,23 @@ const Catalogue = () => {
 
     useEffect(() => {
 
-        const fetchPosts = async () => {
-            setLoading(true);
-            const res = bringProducts('products');
-            setProducts(res);
-            setLoading(false);
-        }
-
-        fetchPosts();
-        console.log(products)
+       if(products.length === 0){
+            bringProducts().then(
+                res => {
+                    setProducts(res.data);
+                    console.log(res.data);
+                }
+            ).catch(error => console.log(error));
+       }
+        
     }, [products]);
 
     return(
         <div className='catalogueDesign'>
             <h1>All of our products</h1>
             <Product products={products} loading={loading}/>
+            
+            
 
         </div>
         
