@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './ProductDetails.css';
 import { bringDetails } from '../../services/apiCalls';
 
+
 /* const ProductDetails = ({product}) => {
 
     return (
