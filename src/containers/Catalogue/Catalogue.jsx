@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './Catalogue.css';
-
+import Product from '../../components/Product/Product';
 import { bringProducts } from '../../services/apiCalls';
 
 
