@@ -13,8 +13,9 @@ const ProductDetails = () => {
     return (
         <div className='productDetailDesign'>
             <h1>Product Details</h1>
-            <ProductCard details = {product.title}/>
-            
+            {product.id !== undefined &&
+            <div>{product.title}</div>
+}
         </div>
     )
 }
