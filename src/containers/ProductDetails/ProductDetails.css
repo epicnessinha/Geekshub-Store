@@ -1,7 +1,13 @@
 .productDetailDesign {
 
-    height: 12em;
-    width: 8em;
-    background-color: aqua; /*just for test*/
-
+    height: 50vh;
+    width: 50vh;
+    background-color: rgb(160, 212, 217); /*just for test*/
+    font-size: large;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left:50vh;
+    display: flex;
+    flex-direction: column;
+    
+   
 }
