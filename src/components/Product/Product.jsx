@@ -8,13 +8,13 @@ export const Product = ({products, loading}) => {
         return <h2>Loading products...</h2>
     }
   return (
-    <div>
+    <ul className="list-group mb-4">
         {products.map(product => (
-            <div key={product.id} className="list-group-item">
+            <li key={product.id} className="list-group-item">
                 {product.title}
-            </div>
+            </li>
         ))}
-    </div>
+    </ul>
   )
 }
 

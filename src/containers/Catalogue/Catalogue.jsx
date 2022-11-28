@@ -3,7 +3,7 @@ import './Catalogue.css';
 import Product from '../../components/Product/Product';
 import { bringProducts } from '../../services/apiCalls';
 import Pagination from '../../components/Pagination/Pagination';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 
@@ -33,11 +33,15 @@ const Catalogue = () => {
     const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
     const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
 
+    const paginate = (pageNumber) => {
+        setCurrentPage(pageNumber)
+    }
+
     return(
         <div className='catalogueDesign'>
             <h1>All of our products</h1>
             <Product products={currentProducts} loading={loading}/>
-            <Pagination postsPerPage={productsPerPage} totalProducts={products.length}/>
+            <Pagination postsPerPage={productsPerPage} totalProducts={products.length} paginate={paginate}/>
             
             
 

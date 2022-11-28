@@ -1,0 +1,8 @@
+.productGridStyle{
+    display: table-row;
+}
+
+.imgStyle {
+    height: 5rem;
+    width: 5rem;
+}
