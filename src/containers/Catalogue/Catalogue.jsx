@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './Catalogue.css';
 import Product from '../../components/Product/Product';
 import { bringProducts } from '../../services/apiCalls';
+import Pagination from '../../components/Pagination/Pagination';
 
 
 
@@ -34,6 +35,7 @@ const Catalogue = () => {
         <div className='catalogueDesign'>
             <h1>All of our products</h1>
             <Product products={currentProducts} loading={loading}/>
+            <Pagination postsPerPage={productsPerPage} totalProducts={products.length}/>
             
             
 
