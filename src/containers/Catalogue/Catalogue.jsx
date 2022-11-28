@@ -26,10 +26,14 @@ const Catalogue = () => {
         
     }, [products]);
 
+    const indexOfLastProduct = currentPage * productsPerPage;
+    const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+    const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
+
     return(
         <div className='catalogueDesign'>
             <h1>All of our products</h1>
-            <Product products={products} loading={loading}/>
+            <Product products={currentProducts} loading={loading}/>
             
             
 
