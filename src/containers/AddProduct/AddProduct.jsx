@@ -1,66 +1,76 @@
 import React from "react";
 import "./AddProduct.css";
+import { useState } from "react";
 
-const AddProduct = () => {
-  return <div className="addProduct"> Add a Product </div>;
-};
 
-/* const [product, setProduct] = useState({
-      name: "",
-      email: "",
-      phone: "",
-      adress: ""
-  
+
+function AddProduct() {
+
+    
+  const [inputField, setInputField] = useState({
+    product_name: "",
+    client_name: "",
+    email: "",
+    payment:"",
   });
 
-  const [msgError, setMsgError] = useState("");
-
-  const handleData = (e) => {
- 
-      setProduct((prevState) => ({
-          ...prevState, [e.target.name]: e.target.value
-          
-      }));
-                          
+  const inputsHandler = (e) => {
+    const { name, value } = e.target;
+    setInputField((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
   };
 
-  const registerMe = () => {
-      console.log("add product test")
-      let foundError = false;
-      setMsgError("");
-
-      foundError = errorVerify();
-      
-      console.log("we did it, now we send data to the backend...");
-  
+  const submitButton = () => {
+    alert(inputField.first_name);
+  };
 
   return (
-      <div className='addProductDesign'>
-          {<pre>{JSON.stringify(user, null,2)}</pre>} 
-          <div className="upSection">
-              <input className="myInput" type="text" name="name" id="name" title="name"
-                  placeholder="Name:" autoComplete="off"
-                  onChange={(e) => { handleData(e) }} onBlur={(ev)=>errorVerify("string",ev.target.value)}/>
+    <div>
+      <input
+        type="text"
+        name="product_name"
+        onChange={inputsHandler}
+        placeholder="Product Name"
+        value={inputField.product_name}
+      />
 
-              <input className="myInput" type="email" name="email" id="email" title="email"
-                  placeholder="E-mail:" autoComplete="off"
-                  onChange={(e) => { handleData(e) }} />
-          </div>
-          <div className="downSection">
-              <input className="myInput" type="text" name="phone" id="phone" title="phone"
-                  placeholder="Phone:" autoComplete="off"
-                  onChange={(e) => { handleData(e) }} />
+      <br />
 
-              <input className="myInput" type="address" name="address" id="address" title="address"
-                  placeholder="Address:" autoComplete="off"
-                  onChange={(e) => { handleData(e) }} />
-          </div>
-          <div className="bottomSection">
-              <div className="designRegisterButton" onClick={()=>registerMe()}>Register</div>
-              <div>{msgError}</div>
-          </div>
-      </div>
-  )
-} */
+      <input
+        type="text"
+        name="client_name"
+        onChange={inputsHandler}
+        placeholder="Name"
+        value={inputField.client_name}
+      />
+
+      <br />
+
+      <input
+        type="email"
+        name="email"
+        onChange={inputsHandler}
+        placeholder="Email"
+        value={inputField.email}
+      />
+
+      <br />
+
+      <input
+        type="payment"
+        name="payment"
+        onChange={inputsHandler}
+        placeholder="Payment Method"
+        value={inputField.payment}
+      />
+
+      <br />
+
+      <button onClick={submitButton}>Buy Now</button>
+    </div>
+  );
+}
 
 export default AddProduct;

@@ -1,4 +1,4 @@
-/* export const errorCheck = (name, value) => {
+export const errorCheck = (name, value) => {
 
     switch(name){
 
@@ -28,7 +28,7 @@
                 return "Write 8 characters at least"
             } else {
 
-                //Checking the password format....
+        
 
                 if (! /[\d()+-]/g.test(value) ) {
                     return "Password en formato inválido";
@@ -43,6 +43,6 @@
 
 
 
-    }
+        }
 
-} */
+}
