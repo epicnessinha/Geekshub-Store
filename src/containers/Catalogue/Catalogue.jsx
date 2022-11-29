@@ -12,6 +12,7 @@ import Pagination from '../../components/Pagination/Pagination';
 const Catalogue = () => {
 
     const[products, setProducts] = useState([]);
+    const[search, setSearch] = useState('');
 
     const[loading, setLoading] = useState(false);
     const[currentPage, setCurrentPage] = useState(1);
@@ -30,6 +31,18 @@ const Catalogue = () => {
         
     }, [products]);
 
+    useEffect(() => {
+        if(search !== '') {
+            const bring = setTimeout(() => {
+              listProd(search);
+            }, 500);
+
+            return () => clearTimeout(bring);
+        } else if(search === ''){
+            setProducts([]);
+        }
+    }, [search]);
+
     const indexOfLastProduct = currentPage * productsPerPage;
     const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
     const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
@@ -38,9 +51,29 @@ const Catalogue = () => {
         setCurrentPage(pageNumber)
     }
 
+    const listProd = (props) => {
+        const filteredData = products.filter((el) => {
+            if(props.input === ""){
+                return el;
+            } else{
+                return el.title.toLowerCase().includes(props)
+            }
+        })
+
+        setProducts(filteredData);
+    }
+
+    const inputSearchHandler = (e) => {
+        var lowerCase = e.target.value.toLowerCase();
+        setSearch(lowerCase);
+    }
+
     return(
         <div className='catalogueDesign'>
-            <h1>All of our products</h1>
+            <div>
+                <h1>All of our products</h1>
+                <input type="text" placeholder='Search products' className='inputDesign' onChange={(e) => inputSearchHandler(e)}></input>
+            </div>
             
             <Product products={currentProducts} loading={loading}/>
             <Pagination productsPerPage={productsPerPage} totalProducts={products.length} paginate={paginate}/>
