@@ -2,6 +2,8 @@
 
 Pair programming project where we're challanged to create an E-commerce Application capable of interacting with a backend through a public API.
 
+## Visuals
+<img src="https://github.com/NotPako/main/fakeECommerce/src/images/Home.jpg" alt="Homepage" width="40%"/>
 
 ## [Platzi Fake Store API](https://fakeapi.platzi.com/)
 
