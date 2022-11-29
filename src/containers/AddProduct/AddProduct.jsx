@@ -68,7 +68,7 @@ function AddProduct() {
 
       <br />
 
-      <button onClick={submitButton}>Submit Now</button>
+      <button onClick={submitButton}>Buy Now</button>
     </div>
   );
 }
