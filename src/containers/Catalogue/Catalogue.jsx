@@ -41,10 +41,10 @@ const Catalogue = () => {
     return(
         <div className='catalogueDesign'>
             <h1>All of our products</h1>
-            <div className="gridAndPag">
-                <Product products={currentProducts} loading={loading}/>
-                <Pagination productsPerPage={productsPerPage} totalProducts={products.length} paginate={paginate}/>
-            </div>
+            
+            <Product products={currentProducts} loading={loading}/>
+            <Pagination productsPerPage={productsPerPage} totalProducts={products.length} paginate={paginate}/>
+            
             
             
 
