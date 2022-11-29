@@ -4,7 +4,7 @@
 .productDetailDesign {
   height: 80vh;
   width: 80vh;
-  background-color:  rgb(139, 202, 210);
+  background-color: rgb(139, 202, 210);
   font-size: xx-large;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin-left: 50vh;
@@ -22,11 +22,12 @@
 }
 
 .image {
-  margin-left: 270px;
+  margin-left: 35vh;
 }
 
+
 .price {
-  margin-left: 30px;
+  margin-left: 10vh;
 }
 
 

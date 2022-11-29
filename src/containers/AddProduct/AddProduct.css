@@ -14,13 +14,13 @@
 
 .feedbackMessageError {
   color: darkcyan;
-  font-size: xx-large;
+  font-size: x-large;
   font-weight: 700;
 }
 
 .feedbackMessageSuccess {
   color: rgb(207, 12, 12);
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 
