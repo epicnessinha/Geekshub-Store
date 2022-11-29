@@ -1,18 +1,143 @@
-import React from "react";
+
 import "./AddProduct.css";
 import { useState } from "react";
+import {errorCheck} from '../../services/validate';
+import { Button, Form, Input } from "antd";
 
 
 
-function AddProduct() {
+const AddProduct = () => {
+  const [form] = Form.useForm();
 
-    
-  const [inputField, setInputField] = useState({
-    product_name: "",
-    client_name: "",
-    email: "",
-    payment:"",
+  const [newProduct, setNewProduct] = useState({
+    strTitle: "",
+    strPrice: "",
+    strDescription: "",
+    strCategory: "",
+    strImages: "",
   });
+
+  const [formError, setFormError] = useState("");
+  const [feedbackMessage, setFeedbackMessage] = useState("");
+
+  const inputHandler = (e) => {
+    setNewProduct((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const errorHandler = (e) => {
+    let error = "";
+    error = errorCheck(e.target.value);
+    setFormError(error);
+  };
+
+  const createNewProduct = () => {
+    if (formError === "no error") {
+      JSON.stringify(newProduct);
+      setFeedbackMessage("The Product was add to the Catalogue with success!");
+    } else setFeedbackMessage(formError);
+  };
+
+  return (
+    <div className="productsForm">
+      <Form form={form} layout="vertical" requiredMark="optional">
+        <Form.Item label="Name" required tooltip="Please write the product name">
+          <Input
+            type="text"
+            name="strProduct"
+            onChange={(e) => inputHandler(e)}
+            onBlur={(e) => errorHandler(e)}
+          />
+        </Form.Item>
+        <Form.Item
+          label="Price"
+          required
+          tooltip="Please write the product's price"
+        >
+          <Input
+            type="text"
+            name="strPrice"
+            onChange={(e) => inputHandler(e)}
+            onBlur={(e) => errorHandler(e)}
+          />
+        </Form.Item>
+        <Form.Item
+          label="Description"
+          required
+          tooltip="Please describe your Product"
+        >
+          <Input
+            type="text"
+            name="strDescription"
+            onChange={(e) => inputHandler(e)}
+            onBlur={(e) => errorHandler(e)}
+          />
+        </Form.Item>
+        <Form.Item
+          label="Category"
+          required
+          tooltip="Please write the category of your Product"
+        >
+          <Input
+            type="text"
+            name="strCategory"
+            onChange={(e) => inputHandler(e)}
+            onBlur={(e) => errorHandler(e)}
+          />
+        </Form.Item>
+        <Form.Item
+          label="Image"
+          required
+          tooltip="Please write the Product's Image url"
+        >
+          <Input
+            type="text"
+            name="strImages"
+            onChange={(e) => inputHandler(e)}
+            onBlur={(e) => errorHandler(e)}
+          />
+        </Form.Item>
+        <Form.Item>
+          <Button onClick={(e) => createNewProduct(e)} type="primary">
+            Submit
+          </Button>
+        </Form.Item>
+      </Form>
+      <span
+        className={
+          feedbackMessage === "Your Product was add to the Catalogue with success!"
+            ? "feedbackMessageSuccess"
+            : "feedbackMessageError"
+        }
+      >
+        {" "}
+        {feedbackMessage ? feedbackMessage : null}
+      </span>
+    </div>
+  );
+};
+
+export default AddProduct;
+
+
+
+
+
+
+/*const AddProduct = () => {
+
+
+  const [inputField, setInputField] = useState({
+    product_title: "",
+    product_price: "",
+    description: "",
+    category:"",
+    images:"",
+  });
+
+
 
   const inputsHandler = (e) => {
     const { name, value } = e.target;
@@ -22,57 +147,70 @@ function AddProduct() {
     }));
   };
 
-  const submitButton = () => {
+
+ const submitButton = () => {
     alert(inputField.first_name);
+  
   };
 
   return (
     <div className="formDesign">
       <input
         type="text"
-        name="product_name"
+        name="product_title"
         onChange={inputsHandler}
+
         placeholder="Product Name"
-        value={inputField.product_name}
+        value={inputField.product_title}
       />
 
       <br />
 
       <input
         type="text"
-        name="client_name"
+        name="product_price"
         onChange={inputsHandler}
-        placeholder="Name"
-        value={inputField.client_name}
+        placeholder="Price"
+        value={inputField.product_price}
       />
 
       <br />
 
       <input
-        type="email"
-        name="email"
+        type="description"
+        name="description"
         onChange={inputsHandler}
-        placeholder="Email"
-        value={inputField.email}
+        placeholder="Description"
+        value={inputField.description}
       />
 
       <br />
 
       <input
-        type="payment"
-        name="payment"
+        type="category"
+        name="category"
         onChange={inputsHandler}
-        placeholder="Payment Method"
-        value={inputField.payment}
+        placeholder="Category (ID)"
+        value={inputField.category}
+      />
+
+      <br />
+
+      <input
+        type="images"
+        name="images"
+        onChange={inputsHandler}
+        placeholder="Images"
+        value={inputField.images}
       />
 
       <br />
 
 <div className="button">
-      <button onClick={submitButton}>Buy Now</button>
+      <button onClick={submitButton}>Add Product</button>
     </div>
     </div>
   );
 }
 
-export default AddProduct;
+export default AddProduct; */
