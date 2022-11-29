@@ -14,6 +14,7 @@ const Header = () => {
 
     return (
         <div className={!darkMode ? "headerDesign" : "headerDesignDark"}>
+            <h2 className="titleDesign">Geekshub Store</h2>
             <div className="linkDesign" onClick={()=>setTimeout(()=>{navigate("/")},250)}>Home</div>
             <div className="linkDesign" onClick={()=>setTimeout(()=>{navigate("/catalogue")},250)}>Catalogue</div>
             <div className="linkDesign" onClick={()=>setTimeout(()=>{navigate("/add")},250)}>Add product</div>

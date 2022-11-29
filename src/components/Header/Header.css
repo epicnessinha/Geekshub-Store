@@ -13,6 +13,10 @@
     color:grey;
 }
 
+.titleDesign{
+    margin-bottom: 5rem;
+}
+
 .headerDesign {
     background-color: darkcyan;
     height: 10rem;
