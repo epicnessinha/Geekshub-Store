@@ -27,7 +27,7 @@ function AddProduct() {
   };
 
   return (
-    <div>
+    <div className="formDesign">
       <input
         type="text"
         name="product_name"
@@ -68,7 +68,9 @@ function AddProduct() {
 
       <br />
 
+<div className="button">
       <button onClick={submitButton}>Buy Now</button>
+    </div>
     </div>
   );
 }
