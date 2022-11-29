@@ -1,7 +1,10 @@
+
+/* I need to put it responsive! */
+
 .productDetailDesign {
-  height: 60vh;
-  width: 60vh;
-  background-color: rgb(160, 212, 217); /*just for test*/
+  height: 80vh;
+  width: 80vh;
+  background-color: rgb(160, 212, 217);
   font-size: xx-large;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin-left: 50vh;
@@ -19,7 +22,7 @@
 }
 
 .image {
-  margin-left: 240px;
+  margin-left: 270px;
 }
 
 .price {
