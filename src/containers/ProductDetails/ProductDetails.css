@@ -1,18 +1,29 @@
 .productDetailDesign {
-  height: 50vh;
-  width: 50vh;
+  height: 60vh;
+  width: 60vh;
   background-color: rgb(160, 212, 217); /*just for test*/
-  font-size: large;
+  font-size: xx-large;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin-left: 50vh;
-  display: flex;
+  display: grid;
   flex-direction: column;
-}
-
-.productTitle {
-  display: flex;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: xx-large;
-  margin-left: 1em;
   align-items: center;
 }
+
+.title {
+  display: flex;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1px;
+  margin-left: 3em;
+  text-align: center;
+}
+
+.image {
+  margin-left: 240px;
+}
+
+.price {
+  margin-left: 30px;
+}
+
+
