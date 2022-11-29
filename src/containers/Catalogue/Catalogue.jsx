@@ -1,8 +1,9 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import './Catalogue.css';
 import Product from '../../components/Product/Product';
 import { bringProducts } from '../../services/apiCalls';
 import Pagination from '../../components/Pagination/Pagination';
+import { darkModeContext } from '../../providers/DarkModeProvider';
 
 
 
@@ -46,10 +47,16 @@ const Catalogue = () => {
     const indexOfLastProduct = currentPage * productsPerPage;
     const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
     const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
+    
+
+    
+
 
     const paginate = (pageNumber) => {
         setCurrentPage(pageNumber)
     }
+
+    
 
     const listProd = (props) => {
         const filteredData = products.filter((el) => {

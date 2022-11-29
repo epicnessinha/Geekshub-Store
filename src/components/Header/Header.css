@@ -23,3 +23,17 @@
  
    
 }
+
+.headerDesignDark{
+    background-color: darkslategray;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.darkThemeButtonDesign{
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+}

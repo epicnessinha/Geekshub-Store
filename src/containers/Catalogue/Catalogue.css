@@ -13,6 +13,15 @@
     
 }
 
+.catalogueDesignDark{
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    display: grid;
+    justify-content: center;
+    overflow-y: scroll;  
+    background-color: darkslateblue;
+    text-align: center;
+}
 .gridAndPag{
 
 }
