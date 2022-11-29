@@ -6,7 +6,8 @@
     display: grid;
     justify-content: center;
     overflow-y: scroll;  
-    background-color: rgb(149, 180, 238);
+    background-color: rgb(139, 202, 210);
+     /* rgb(149, 180, 238);*/
     text-align: center;
     
     
