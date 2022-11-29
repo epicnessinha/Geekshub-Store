@@ -8,9 +8,10 @@ function AddProduct() {
 
     
   const [inputField, setInputField] = useState({
-    first_name: "",
-    last_name: "",
-    gmail: "",
+    product_name: "",
+    client_name: "",
+    email: "",
+    payment:"",
   });
 
   const inputsHandler = (e) => {
@@ -29,30 +30,40 @@ function AddProduct() {
     <div>
       <input
         type="text"
-        name="first_name"
+        name="product_name"
         onChange={inputsHandler}
-        placeholder="First Name"
-        value={inputField.first_name}
+        placeholder="Product Name"
+        value={inputField.product_name}
       />
 
       <br />
 
       <input
         type="text"
-        name="last_name"
+        name="client_name"
         onChange={inputsHandler}
-        placeholder="First Name"
-        value={inputField.last_name}
+        placeholder="Name"
+        value={inputField.client_name}
       />
 
       <br />
 
       <input
-        type="gmail"
-        name="gmail"
+        type="email"
+        name="email"
         onChange={inputsHandler}
-        placeholder="Gmail"
-        value={inputField.gmail}
+        placeholder="Email"
+        value={inputField.email}
+      />
+
+      <br />
+
+      <input
+        type="payment"
+        name="payment"
+        onChange={inputsHandler}
+        placeholder="Payment Method"
+        value={inputField.payment}
       />
 
       <br />
