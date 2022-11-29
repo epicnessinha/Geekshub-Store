@@ -14,7 +14,12 @@
 }
 
 .titleDesign{
-    margin-bottom: 5rem;
+    margin-bottom: 1.6vh;
+    margin-right: 68vh;
+    font-family: fantasy;
+    font-weight: 900;
+    font-size: 80px;
+   
 }
 
 .headerDesign {
@@ -41,3 +46,4 @@
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
 }
+

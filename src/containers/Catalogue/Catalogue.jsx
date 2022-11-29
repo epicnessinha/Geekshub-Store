@@ -69,6 +69,8 @@ const Catalogue = () => {
     <div className={darkMode ? "catalogueDesign" : "catalogueDesignDark"}>
       <div>
         <h1>All of our products</h1>
+        <br></br>
+        <br></br>
         <input
           type="text"
           placeholder="Search products"
