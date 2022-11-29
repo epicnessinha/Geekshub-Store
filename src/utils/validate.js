@@ -1,4 +1,4 @@
-/*export const errorCheck = (name, value) => {
+/* export const errorCheck = (name, value) => {
 
     switch(name){
 
@@ -21,8 +21,8 @@
 
  
 
-        case 'password':
-        case 'password2':
+        case 'address':
+
 
             if(value.length < 8){
                 return "Write 8 characters at least"
