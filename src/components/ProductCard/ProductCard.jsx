@@ -21,12 +21,12 @@ const ProductCard = ({value}) => {
 
     return (
         <div className='productInfoDesign' onClick={() => goDetail()}>
-            <h3>{value.title}</h3>
-            <div className='productImg'><img src={``} alt={value.title} with='375' height='560'/></div>
+            <h4>{value.title}</h4>
+            <img className="img-thumbnail" src={value.images} alt={value.title} width='120' height='120'/>
             <div className='priceAndDescription'>
                 <div>Price: {value.price}€</div>
             </div>
-            <div className='description'>{value.description}</div>
+        
         </div>
     )
 

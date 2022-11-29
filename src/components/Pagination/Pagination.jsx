@@ -13,11 +13,11 @@ export const Pagination = ({productsPerPage, totalProducts, paginate}) => {
     <nav arial-label="PageNavigation">
         <ul className='pagination'>
             {pageNumbers.map(number => (
-                <li key={number} className='page-item'>
+                <div key={number}>
                     <a onClick={() => paginate(number)} href="#!" className='page-link'>
                         {number}
                     </a>
-                </li>
+                </div>
             ))}
         </ul>
     </nav>

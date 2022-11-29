@@ -13,13 +13,13 @@ const Product = ({products, loading}) => {
         return <h2>Loading products...</h2>
     }
   return (
-    <ul className="list-group mb-4">
+    <div className="productGridDesign">
         {products.map(product => (
             <div key={product.id}>
             <ProductCard value={product}/>
             </div>
         ))}
-    </ul>
+    </div>
   )
 }
 

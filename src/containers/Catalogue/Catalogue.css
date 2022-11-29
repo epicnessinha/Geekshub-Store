@@ -1,16 +1,17 @@
 .catalogueDesign{
 
 
-    height: 87vh; 
     margin-top: 0.5em;
     margin-bottom: 1em;
-    display: flex;
-    flex-direction: row;
+    display: grid;
     justify-content: center;
     overflow-y: scroll;  
-    cursor:pointer;
     background-color: rgb(149, 180, 238);
     
     
+    
+}
+
+.gridAndPag{
     
 }
