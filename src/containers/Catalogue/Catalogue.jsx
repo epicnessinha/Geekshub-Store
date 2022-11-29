@@ -47,6 +47,7 @@ const Catalogue = () => {
     const indexOfLastProduct = currentPage * productsPerPage;
     const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
     const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
+    const darkMode = useContext(darkModeContext);
     
 
     
@@ -76,7 +77,7 @@ const Catalogue = () => {
     }
 
     return(
-        <div className='catalogueDesign'>
+        <div className={darkMode ? 'catalogueDesign' : 'catalogueDesignDark'}>
             <div>
                 <h1>All of our products</h1>
                 <input type="text" placeholder='Search products' className='inputDesign' onChange={(e) => inputSearchHandler(e)}></input>
