@@ -1,4 +1,39 @@
-.formDesign {
+
+
+.productsForm {
+  padding-top: 10vh;
+  margin-top:0;
+  margin-left: 10em ;
+  margin-right: 3em;
+  display: flex;
+  flex-direction: column;
+  width: 60vh;
+  font-weight: 800;
+
+}
+
+.feedbackMessageError {
+  color: darkcyan;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.feedbackMessageSuccess {
+  color: rgb(207, 12, 12);
+  font-size: x-large;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*.formDesign {
   height: 90vh;
   width: 100vw;
   background-color: rgb(139, 202, 210);
@@ -35,4 +70,4 @@
 
 .msgError {
   color: red;
-}
+}*/
