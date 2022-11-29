@@ -11,7 +11,7 @@ const ProductDetails = () => {
         <h1>{product.title}</h1>
       </div>
       <div>
-        <img className="image" src={product.images} width="380" height="320" />
+        <img className="image" src={product.images} width="500" height="420" />
       </div>
       <div className="price">
         <div>Price: {product.price} €</div>
