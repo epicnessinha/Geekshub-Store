@@ -2,12 +2,13 @@
 
 .productsForm {
   padding-top: 10vh;
-  margin-top:0;
+
   margin-left: 10em ;
   margin-right: 3em;
   display: flex;
   flex-direction: column;
-  width: 60vh;
+  width: 55vh;
+
   font-weight: 800;
 
 }
@@ -24,8 +25,23 @@
 }
 
 
+.button {
+  background-color:darkcyan;
+  width: 10vh;
+  height: 3vh;
+  font-size: larger;
+  font-weight: bold;
+}
 
 
+.topics{
+  font-size: x-large;
+  
+}
+
+.text{
+ font-size: xx-large;
+}
 
 
 

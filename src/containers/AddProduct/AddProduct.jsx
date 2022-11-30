@@ -42,21 +42,21 @@ const AddProduct = () => {
 
   return (
     <div className="productsForm">
-      <Form form={form} layout="vertical" requiredMark="optional">
-        <Form.Item label="Name" required tooltip="Please write the product name">
-          <Input
-            type="text"
+      <Form form={form} layout="vertical" requiredMark="optional" >
+        <Form.Item label="Name" required tooltip="Please write the product name" >
+          <Input className="topics"
+            type="text" 
             name="strProduct"
             onChange={(e) => inputHandler(e)}
             onBlur={(e) => errorHandler(e)}
           />
-        </Form.Item>
-        <Form.Item
-          label="Price"
+        </Form.Item >
+        <Form.Item 
+          label ="Price"
           required
           tooltip="Please write the product's price"
         >
-          <Input
+          <Input className="topics"
             type="text"
             name="strPrice"
             onChange={(e) => inputHandler(e)}
@@ -68,7 +68,7 @@ const AddProduct = () => {
           required
           tooltip="Please describe your Product"
         >
-          <Input
+          <Input className="topics"
             type="text"
             name="strDescription"
             onChange={(e) => inputHandler(e)}
@@ -80,19 +80,19 @@ const AddProduct = () => {
           required
           tooltip="Please write the category of your Product"
         >
-          <Input
+          <Input className="topics"
             type="text"
             name="strCategory"
             onChange={(e) => inputHandler(e)}
             onBlur={(e) => errorHandler(e)}
           />
         </Form.Item>
-        <Form.Item
-          label="Image"
+        <Form.Item 
+          label="Image" 
           required
           tooltip="Please write the Product's Image url"
         >
-          <Input
+          <Input className="topics"
             type="text"
             name="strImages"
             onChange={(e) => inputHandler(e)}
@@ -100,7 +100,7 @@ const AddProduct = () => {
           />
         </Form.Item>
         <Form.Item>
-          <Button onClick={(e) => createNewProduct(e)} type="primary">
+          <Button className="button" onClick={(e) => createNewProduct(e)} type="primary">
             Submit
           </Button>
         </Form.Item>
