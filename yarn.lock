@@ -2668,6 +2668,11 @@
   "resolved" "https://registry.npmjs.org/ansi-styles/-/ansi-styles-5.2.0.tgz"
   "version" "5.2.0"
 
+"ant@^0.2.0":
+  "integrity" "sha512-DWibFtH1S2f3ueMjO9EWy+jdFtcYR2byZIV62w5eBcWZVL3xeGyyN9t3kqv/kRsU8LMPD78XIQB8arywB8oRIA=="
+  "resolved" "https://registry.npmjs.org/ant/-/ant-0.2.0.tgz"
+  "version" "0.2.0"
+
 "antd@^5.0.2":
   "integrity" "sha512-vKDdFJ0SGWR4nndq5BcrF9OBa5nt3FTCtODnDh8piPdC3coSgjxb1t0qNkW9MPHaPFrOnAOjlvKHqtBRuVkmHg=="
   "resolved" "https://registry.npmjs.org/antd/-/antd-5.0.2.tgz"
