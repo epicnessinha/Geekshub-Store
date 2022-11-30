@@ -71,7 +71,7 @@ const Catalogue = () => {
         <h1>All of our products</h1>
         <br></br>
         <br></br>
-        <input
+        <input 
           type="text"
           placeholder="Search products"
           className="inputDesign"

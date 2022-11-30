@@ -11,6 +11,7 @@
 .catalogueDesign:hover {
   transition: 0.2s;
   margin: 10px;
+  
 }
 
 .catalogueDesignDark {
@@ -21,15 +22,18 @@
   overflow-y: scroll;
   background-color: darkslateblue;
   text-align: center;
+ 
 }
 
 .inputDesign {
   width: 50vh;
-  height: 3vh;
+  height: 3.3vh;
   border-radius: 0.5%;
   border-color: darkcyan;
   border: 1vh;
-  
+  font-size: x-large;
+
+ 
 }
 
 .productGridDesign{
