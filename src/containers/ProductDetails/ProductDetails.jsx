@@ -7,11 +7,18 @@ const ProductDetails = () => {
 
   return (
     <div className="productDetailDesign">
-      <br></br>
-      <h1>Product Detail</h1>
-      {product.id !== undefined && (
-        <div className="productTitle">{product.title}</div>
-      )}
+      <div className="title">
+        <h1>{product.title}</h1>
+      </div>
+      <div>
+        <img className="image" src={product.images} width="500" height="420" />
+      </div>
+      <div className="price">
+        <div>Price: {product.price} €</div>
+        <div className="description">
+          <div>{product.description}</div>
+        </div>
+      </div>
     </div>
   );
 };

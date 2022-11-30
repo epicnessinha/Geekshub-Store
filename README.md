@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Geekshub Store
 
+Pair programming project where we're challanged to create an E-commerce Application capable of interacting with a backend through a public API.
+
+
+## [Platzi Fake Store API](https://fakeapi.platzi.com/)
+
+API for prototyping E-commerce and learning about how to connect to an API with the best practices.
+<br>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Instructions to use:
 
-### `npm start`
+Follow this steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Clone this repo:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+`https://github.com/NotPako/fakeECommerce.git`
 
-### `npm test`
+### Install npm package:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`npm install`
 
-### `npm run build`
+### Run the app:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`npm start`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## About App:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In order to develop this project, for the frontend part we used React with React-Router-Dom, Axios, functional components, debounced search, validated forms, useContext, and also, correct folder distribution with the use of services for external API calls.
+<br>
+Users are able to consult and filter data (all search inputs are debounced), create new products through a register form, validated (error check).
+<br>
+We implemented pagination for displayed elements coming from the API and a light/dark theme selector with the use of React useContenxt as a global state manager.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Endpoints:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- "/"
+- "/catalogue"
+- "/details"
+- "/add"
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Containers:
 
-## Learn More
+- Home.jsx
+- Catalogue.jsx
+- ProductDetails.jsx
+- SearchProduct.jsx
+- AddProduct.jsx
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Components:
 
-### Code Splitting
+- Header.jsx
+- Body.jsx
+- Footer.jsx
+- Pagination.jsx
+- Product.jsx
+- ProductCard.jsx
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+### Services:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- apiCalls.js
+- validate.js
 
-### Making a Progressive Web App
+### Providers:
+- ProductProvider.jsx
+- DarkModeProvider.jsx
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Team contacts: 
+[Pablo Juan](https://www.linkedin.com/in/pabgra/)
+<br>
+[Vanessa Ferreira](https://www.linkedin.com/in/vanessabio/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

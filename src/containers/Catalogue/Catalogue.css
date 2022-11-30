@@ -1,28 +1,38 @@
-.catalogueDesign{
-
-
-    margin-top: 0.5em;
-    margin-bottom: 1em;
-    display: grid;
-    justify-content: center;
-    overflow-y: scroll;  
-    background-color: rgb(139, 202, 210);
-     /* rgb(149, 180, 238);*/
-    text-align: center;
-    
-    
-    
+.catalogueDesign {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  display: grid;
+  justify-content: center;
+  overflow-y: scroll;
+  background-color: rgb(139, 202, 210);
+  text-align: center;
 }
 
-.catalogueDesignDark{
-    margin-top: 0.5em;
-    margin-bottom: 1em;
-    display: grid;
-    justify-content: center;
-    overflow-y: scroll;  
-    background-color: darkslateblue;
-    text-align: center;
+.catalogueDesign:hover {
+  transition: 0.2s;
+  margin: 10px;
 }
-.gridAndPag{
 
+.catalogueDesignDark {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  display: grid;
+  justify-content: center;
+  overflow-y: scroll;
+  background-color: darkslateblue;
+  text-align: center;
+}
+
+.inputDesign {
+  width: 50vh;
+  height: 3vh;
+  border-radius: 0.5%;
+  border-color: darkcyan;
+  border: 1vh;
+  
+}
+
+.productGridDesign{
+
+  
 }
