@@ -83,3 +83,4 @@ We implemented pagination for displayed elements coming from the API and a light
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
